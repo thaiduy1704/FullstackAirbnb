@@ -8,9 +8,7 @@ import morgan from "morgan";
 import { rootRouter } from "./routes/index.js";
 
 // Import Data
-import Location from "./models/Location.js";
-
-import { dataLocation } from "./data/index.js";
+import second from "./models/Location.js";
 
 // CONFIGURATION
 
@@ -46,7 +44,5 @@ mongoose
   })
   .then(() => {
     app.listen(PORT, () => console.log(`Server is listening:${PORT}`));
-    //Only add data one time
-    // Location.insertMany(dataLocation);
   })
   .catch((error) => console.log(`${error} did not connect`));

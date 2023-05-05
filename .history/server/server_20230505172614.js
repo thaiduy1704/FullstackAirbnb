@@ -5,13 +5,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import helmet from "helmet";
 import morgan from "morgan";
-import { rootRouter } from "./routes/index.js";
-
-// Import Data
-import Location from "./models/Location.js";
-
-import { dataLocation } from "./data/index.js";
-
+import second from "./routes/index.js";
 // CONFIGURATION
 
 dotenv.config();
@@ -35,18 +29,3 @@ app.use(cors());
 // ROUTES
 
 app.use("/api", rootRouter);
-
-/* MONGOOSE SETUP */
-
-const PORT = process.env.PORT || 9000;
-mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    app.listen(PORT, () => console.log(`Server is listening:${PORT}`));
-    //Only add data one time
-    // Location.insertMany(dataLocation);
-  })
-  .catch((error) => console.log(`${error} did not connect`));

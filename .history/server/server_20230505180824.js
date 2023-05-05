@@ -10,7 +10,7 @@ import { rootRouter } from "./routes/index.js";
 // Import Data
 import Location from "./models/Location.js";
 
-import { dataLocation } from "./data/index.js";
+import { dataProduct } from "./data/index.js";
 
 // CONFIGURATION
 
@@ -46,7 +46,5 @@ mongoose
   })
   .then(() => {
     app.listen(PORT, () => console.log(`Server is listening:${PORT}`));
-    //Only add data one time
-    // Location.insertMany(dataLocation);
   })
   .catch((error) => console.log(`${error} did not connect`));
