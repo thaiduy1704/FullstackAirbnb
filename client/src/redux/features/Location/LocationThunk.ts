@@ -5,7 +5,7 @@ import { ILocation } from '../../../@types/Location';
 import { RootState } from '../../store';
 import { UNAUTHORIZED, UNAUTHENTICATED } from '../../../constant/Error/Error';
 
-const URL = '/api/locations';
+const URL = '/location';
 
 const getLocationList = createAsyncThunk<ILocation[]>(
 	'location/getLocationsList',

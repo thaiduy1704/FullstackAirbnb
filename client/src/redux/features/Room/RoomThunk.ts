@@ -4,7 +4,7 @@ import { IRoom } from '../../../@types/Room';
 import { RootState } from '../../store';
 import { UNAUTHENTICATED, UNAUTHORIZED } from '../../../constant/Error/Error';
 
-const URL = '/api/rooms';
+const URL = '/room';
 
 const getAllRoom = createAsyncThunk<IRoom[], void, { state: RootState }>(
 	'room/getAllRooms',

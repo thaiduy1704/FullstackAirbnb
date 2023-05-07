@@ -9,8 +9,9 @@ import { rootRouter } from "./routes/index.js";
 
 // Import Data
 import Location from "./models/Location.js";
+import Room from "./models/Room.js";
 
-import { dataLocation } from "./data/index.js";
+import { dataLocation, dataRoom } from "./data/index.js";
 
 // CONFIGURATION
 
@@ -48,5 +49,6 @@ mongoose
     app.listen(PORT, () => console.log(`Server is listening:${PORT}`));
     //Only add data one time
     // Location.insertMany(dataLocation);
+    // Room.insertMany(dataRoom);
   })
   .catch((error) => console.log(`${error} did not connect`));
