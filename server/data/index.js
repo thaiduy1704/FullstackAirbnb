@@ -73,3 +73,35 @@ export const dataRoom = [
     locationId: ["63701d24f03239c72c00018f", "645765a02bc725dcfe8443cf"],
   },
 ];
+export const dataUser = [
+  {
+    name: "thaiduy",
+    email: "thaiduy@gmail.com",
+    password: "duy171900",
+    phone: "0908269622",
+    birthday: "17/04/2000",
+    address: "95 ahisa",
+    gender: "male",
+    type: "ADMIN",
+  },
+  {
+    name: "LEVY",
+    email: "thaiduy1704@gmail.com",
+    password: "duy171900",
+    phone: "0908269622",
+    birthday: "17/04/2000",
+    address: "95 ahisa",
+    gender: "male",
+    type: "CLIENT",
+  },
+  {
+    name: "MINHBEO",
+    email: "thaiduy1905@gmail.com",
+    password: "duy171900",
+    phone: "0908269622",
+    birthday: "17/04/2000",
+    address: "95 ahisa",
+    gender: "male",
+    type: "CLIENT",
+  },
+];

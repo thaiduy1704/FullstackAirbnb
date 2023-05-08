@@ -1,9 +1,8 @@
 import mongoose from "mongoose";
-import Location from "./Location.js";
+
 const RoomSchema = new mongoose.Schema(
   {
     deleteAt: Boolean,
-    _id: String,
     name: String,
     guests: Number,
     bedRoom: Number,

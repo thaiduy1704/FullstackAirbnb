@@ -10,8 +10,9 @@ import { rootRouter } from "./routes/index.js";
 // Import Data
 import Location from "./models/Location.js";
 import Room from "./models/Room.js";
+import User from "./models/User.js";
 
-import { dataLocation, dataRoom } from "./data/index.js";
+import { dataLocation, dataRoom, dataUser } from "./data/index.js";
 
 // CONFIGURATION
 
@@ -50,5 +51,6 @@ mongoose
     //Only add data one time
     // Location.insertMany(dataLocation);
     // Room.insertMany(dataRoom);
+    // User.insertMany(dataUser);
   })
   .catch((error) => console.log(`${error} did not connect`));

@@ -5,7 +5,7 @@ import { IUser } from '../../../@types/User';
 import { IRegister } from '../../../@types/Auth';
 import { UNAUTHENTICATED, UNAUTHORIZED } from '../../../constant/Error/Error';
 
-const URL = '/api/users';
+const URL = '/user';
 
 const getAllUsers = createAsyncThunk<IUser[], void, { state: RootState }>(
 	'user/getAllUsers',

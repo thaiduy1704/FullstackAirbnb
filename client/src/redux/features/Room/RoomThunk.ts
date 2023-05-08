@@ -42,7 +42,7 @@ const getRoomListByLocationId = createAsyncThunk<
 	try {
 		const params = {
 			method: 'GET',
-			url: `${URL}?locationId=${room.locationId}`,
+			url: `${URL}/bylocation/${room.locationId}`,
 		};
 		const response = await axiosInstance.request(params);
 		return response.data;

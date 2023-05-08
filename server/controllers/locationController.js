@@ -44,7 +44,7 @@ const deleteLocationById = async (req, res) => {
     console.log(locationId);
     await Location.deleteMany({ _id: locationId });
 
-    res.send("Success Delete Location");
+    res.send(`Success Delete Location by ${locationId}`);
   } catch (error) {
     failCode(error);
   }
